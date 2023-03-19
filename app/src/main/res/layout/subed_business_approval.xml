@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/businessapproval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/bgimage"
+        android:layout_width="450dp"
+        android:layout_height="766dp"
+        android:src="@drawable/backg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/centertick"
+        android:layout_width="110dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/centerring"
+        app:layout_constraintEnd_toEndOf="@+id/centerring"
+        app:layout_constraintStart_toStartOf="@+id/centerring"
+        app:layout_constraintTop_toTopOf="@+id/centerring"
+        app:srcCompat="@drawable/holotick" />
+
+    <ImageView
+        android:id="@+id/centerring"
+        android:layout_width="241dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ring" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="345dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Your Business has been submitted for approval"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centerring" />
+
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/baseline_home_24"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/bgimage"
+        app:layout_constraintEnd_toEndOf="@+id/bgimage"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/bgimage" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/add"
+        app:iconTint="#00FF0A"
+        app:layout_constraintBottom_toBottomOf="@+id/bgimage"
+        app:layout_constraintEnd_toEndOf="@+id/bgimage"
+        app:layout_constraintStart_toStartOf="@+id/bgimage" />
+
+    <Button
+        android:id="@+id/profilebtn"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="323dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/baseline_person_24"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/bgimage"
+        app:layout_constraintEnd_toEndOf="@+id/bgimage"
+        app:layout_constraintStart_toStartOf="@+id/bgimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
